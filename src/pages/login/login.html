@@ -1,0 +1,54 @@
+<!-- <ion-list>
+  <h1> Bienvenido a la Carga de tu Celular, inicia sesion para comenzar, si no tenes cuenta, hace click en Registrarse</h1>
+    <ion-item>
+      <ion-label floating>Username</ion-label>
+      <ion-input [(ngModel)]="username" type="text" value=""></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label floating>Password</ion-label>
+      <ion-input [(ngModel)]="password"  type="password" value=""></ion-input>
+    </ion-item>
+  
+  </ion-list>
+  
+  <div padding>
+    <button ion-button full  (click)="login()">Login</button>
+    <button ion-button color="light" (click)="UserValido()">UseValid</button>
+    <button ion-button color ="light"  (click)="Registrarse()">Registrarse</button>
+ 
+  </div> -->
+
+
+
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
+  
+  <div class="testbox">
+    <h1>Login Piano Tematico</h1>
+    <form>
+    <label id="icon" for="name"><i class="icon-envelope "></i></label>
+    <input [(ngModel)]="username" type="text" name="name" id="name" placeholder="Mail" required/>
+
+    <label   id="icon" for="name"><i class="icon-shield"></i></label>
+    <input [(ngModel)]="password" type="password" name="name1" id="name1" placeholder="Contraseña" required/>
+
+     <a (click)="login()" class="button">Login</a>
+     <a (click)="Registrarse()" class="button">Registar</a>
+
+     <div padding>
+      <ion-list>
+        <ion-item>
+          <ion-label>Seleccione un Usuario...</ion-label>
+          <ion-select name="firstField" [(ngModel)]="tipoUser" (ionChange)="UserValido()">
+            <ion-option value="usuario">Usuario</ion-option>
+            <ion-option value="admin">Administrador</ion-option>
+            <ion-option value="invitado">Invitado</ion-option>
+            <ion-option value="jugador1">Jugador 1</ion-option>
+            <ion-option value="jugador2">Jugador 2</ion-option>
+          </ion-select>
+        </ion-item>
+      </ion-list>
+    </div>
+    </form>
+  </div>

@@ -1,0 +1,40 @@
+<!-- <ion-list>
+  
+    <ion-item>
+      <ion-label floating>Username</ion-label>
+      <ion-input [(ngModel)]="username" type="text" aria-placeholder="Ingrese su User" value=""></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label floating>Password</ion-label>
+      <ion-input [(ngModel)]="password" aria-placeholder="ingrese su Password"  type="password" value=""></ion-input>
+    </ion-item>
+  
+  </ion-list>
+  <div padding>
+  <button ion-button full  (click)="Aceptar()">Aceptar</button>
+  <button ion-button full  (click)="Cancelar()">Cancelar</button>
+  </div> -->
+
+
+
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
+  
+  <div class="testbox">
+    <h1>Registro</h1>
+    <form>
+    <label id="icon" for="name"><i class="icon-envelope "></i></label>
+    <input [(ngModel)]="username" type="text" name="name" id="name" placeholder="Mail" required/>
+      <br>
+    <label   id="icon" for="name"><i class="icon-shield"></i></label>
+    <input [(ngModel)]="password" type="password" name="name" id="name" placeholder="Contraseña" required/>
+
+    <label   id="icon" for="name"><i class="icon-shield"></i></label>
+    <input [(ngModel)]="passwordconfirm" type="password" name="name" id="name" placeholder="Confirmar contraseña" required/>
+
+     <a  (click)="Aceptar()" class="button">Aceptar</a>
+     <a (click)="Cancelar()" class="button">Cancelar</a>
+
+    </form>
+  </div>
